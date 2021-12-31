@@ -51,7 +51,7 @@ namespace TOTVS.Tests
             #endregion
 
             #region Act
-            HttpResponseMessage request = await _httpClient.GetAsync("api/user/identifier");
+            HttpResponseMessage request = await _httpClient.GetAsync("api/user/Identifier");
             #endregion
 
             #region Assert
