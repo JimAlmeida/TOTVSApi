@@ -7,6 +7,8 @@ using TOTVS.Domain;
 using TOTVS.Domain.Models;
 using Dapper;
 using TOTVS.Domain.Entities;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TOTVS.Application.Queries
 {
@@ -21,16 +23,20 @@ namespace TOTVS.Application.Queries
         public async Task<MediatorResponse> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
             var response = new MediatorResponse();
-            var user = await _connection.QueryAsync<User>("Select * From \"Users\" WHERE \"Identifier\" = @Id AND \"IsActive\" = true", new {Id = request.UserIdentifier});
-            
-            if (user == null)
+            var users = await _connection.QueryAsync<User>("Select * From \"Users\" WHERE \"Identifier\" = @Id AND \"IsActive\" = true", new {Id = request.UserIdentifier});
+            if (!users.Any())
             {
-                response.AddError(404, "User not found");
+                response.AddError(404, "Usuário não encontrado");
             }
             else
             {
+                foreach (var user in users)
+                {
+                    var profiles = await _connection.QueryAsync<Profile>("Select * From \"Profiles\" Where \"UserId\" = @Id;", new { Id = user.Identifier });
+                    user.Profiles = (ICollection<Profile>)profiles;
+                }
                 response.IsSuccessful = true;
-                response.Value = user;
+                response.Value = users;
             }
 
             return response;

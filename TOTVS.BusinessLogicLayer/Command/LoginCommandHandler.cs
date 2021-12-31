@@ -58,8 +58,8 @@ namespace TOTVS.Application.Command
         private bool ValidatePassword(string password, string salt, string hashedPassword)
         {
             var providedPassword = $"{password}.{salt}";
-
-            return _passwordHasher.VerifyHashedPassword(null, hashedPassword, providedPassword).ToString() == "Succeeded";
+            var verificationResult = _passwordHasher.VerifyHashedPassword(null, hashedPassword, providedPassword).ToString();
+            return verificationResult == "Success";
         }
     }
 }

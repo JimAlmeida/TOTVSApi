@@ -34,7 +34,10 @@ namespace TOTVS.Application.Command
                     Name = request.Name,
                     Profiles = request.Profiles,
                     Hash = _passwordHasher.HashPassword(null, $"{request.Password}.{salt}"),
-                    Salt = salt
+                    Salt = salt,
+                    IsActive = true,
+                    LastLoginIn = DateTime.Now,
+                    CreatedIn = DateTime.Now,
                 };
                 _dbContext.Users.Add(user);
                 await _dbContext.SaveChangesAsync();

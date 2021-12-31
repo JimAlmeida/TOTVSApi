@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.WebApi", "TOTVSApi\TOTVS.WebApi.csproj", "{615226F9-1097-40CE-AB4B-720E10A560B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.Domain", "TOTVS.Domain\TOTVS.Domain.csproj", "{F299BCEF-231E-49DE-A540-5AF9E6BE17A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTVS.Domain", "TOTVS.Domain\TOTVS.Domain.csproj", "{F299BCEF-231E-49DE-A540-5AF9E6BE17A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.Application", "TOTVS.BusinessLogicLayer\TOTVS.Application.csproj", "{C7EE632F-73F8-4EBB-B9B4-6CEB0DC03780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTVS.Application", "TOTVS.BusinessLogicLayer\TOTVS.Application.csproj", "{C7EE632F-73F8-4EBB-B9B4-6CEB0DC03780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.Persistence", "TOTVS.DataAccessLayer\TOTVS.Persistence.csproj", "{A5CBC63D-619B-4635-982E-38A98CD239A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTVS.Persistence", "TOTVS.DataAccessLayer\TOTVS.Persistence.csproj", "{A5CBC63D-619B-4635-982E-38A98CD239A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.Tests", "TOTVS.Tests\TOTVS.Tests.csproj", "{D8763D2F-86A2-4DDC-9F9C-59DD8E62A2EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOTVS.Tests", "TOTVS.Tests\TOTVS.Tests.csproj", "{D8763D2F-86A2-4DDC-9F9C-59DD8E62A2EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TOTVS.WebApi", "TOTVS.WebApi\TOTVS.WebApi.csproj", "{C4649A9A-1A4B-4D63-8B56-F5BF12E66D0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{615226F9-1097-40CE-AB4B-720E10A560B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{615226F9-1097-40CE-AB4B-720E10A560B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{615226F9-1097-40CE-AB4B-720E10A560B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{615226F9-1097-40CE-AB4B-720E10A560B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F299BCEF-231E-49DE-A540-5AF9E6BE17A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F299BCEF-231E-49DE-A540-5AF9E6BE17A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F299BCEF-231E-49DE-A540-5AF9E6BE17A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{D8763D2F-86A2-4DDC-9F9C-59DD8E62A2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8763D2F-86A2-4DDC-9F9C-59DD8E62A2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8763D2F-86A2-4DDC-9F9C-59DD8E62A2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4649A9A-1A4B-4D63-8B56-F5BF12E66D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4649A9A-1A4B-4D63-8B56-F5BF12E66D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4649A9A-1A4B-4D63-8B56-F5BF12E66D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4649A9A-1A4B-4D63-8B56-F5BF12E66D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

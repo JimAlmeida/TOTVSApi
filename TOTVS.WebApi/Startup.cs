@@ -89,13 +89,9 @@ namespace TOTVSApi
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseMiddleware<GlobalExceptionMiddleware>();
-       
-            if (env.IsDevelopment())
-            {
-                //app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TOTVSApi v1"));
-            }
+     
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TOTVSApi v1"));
 
             app.UseHttpsRedirection();
 

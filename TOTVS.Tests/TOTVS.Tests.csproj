@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TOTVSApi\TOTVS.WebApi.csproj" />
+    <ProjectReference Include="..\TOTVS.WebApi\TOTVS.WebApi.csproj" />
   </ItemGroup>
 
 </Project>
