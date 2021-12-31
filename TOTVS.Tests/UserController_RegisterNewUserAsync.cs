@@ -37,7 +37,7 @@ namespace TOTVS.Tests
         [InlineData("","","")]
         [InlineData("João", "", "")]
         [InlineData("João", "senha12", "")]
-        [InlineData("João", "senha123", "email")]
+        [InlineData("João", "senha123", "teste")]
         public async Task When_RequiredParametersAreNotSent_Expect_BadRequestStatus(string name, string password, string email)
         {
             #region Arrange
@@ -60,7 +60,7 @@ namespace TOTVS.Tests
             #region Arrange
             var profiles = new List<Profile>() { new Profile() { AboutMe = "AboutMe", Address = "Address", FirstName = "João", LastName = "Carlos", City = "Rio de Janeiro" } };
             //Randomized email to ensure new record is always created
-            var registerRequest = new RegisterUserRequest() { Email = $"email{Guid.NewGuid().ToString()[..8]}@email.com", Name = "João", Password = "senha123", Profiles = profiles };
+            var registerRequest = new RegisterUserRequest() { Email = $"teste{Guid.NewGuid().ToString()[..8]}@email.com", Name = "João", Password = "senha123", Profiles = profiles };
             var serializedRequest = JsonConvert.SerializeObject(registerRequest);
             #endregion
 
