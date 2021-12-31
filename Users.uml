@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Users</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Users</node>
+    <node x="-322.0" y="-15.0">745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Profiles</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Profiles" target="745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Users" relationship="REFERENCES">
+      <point x="0.0" y="0.0" />
+      <point x="63.75" y="111.5" />
+      <point x="63.75" y="104.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="78.0" y="104.5" />
+  <SelectedNodes>
+    <node>745140e1-6910-4d90-96fe-49be446e8a44.TABLE:TOTVSDevelop.public.Profiles</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

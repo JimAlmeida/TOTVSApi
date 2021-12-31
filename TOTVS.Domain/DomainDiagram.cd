@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TOTVS.Domain.User">
+    <Position X="2.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABCAABAAGIAAgAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+      <NewMemberFileName>User.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTVS.Domain.Profile">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Profile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTVS.Domain.LoginRequest">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LoginRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TOTVS.Domain.RegisterUserRequest">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RegisterUserRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTVS.Domain.MediatorResponse">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Models\MediatorResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TOTVS.Domain.ErrorModel">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Error.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
