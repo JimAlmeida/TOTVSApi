@@ -14,7 +14,7 @@ namespace TOTVS.Application
             var key = Encoding.UTF8.GetBytes(jwtKey);
 
             var _jti = jwtId ?? Guid.NewGuid().ToString();
-            var _issTime = issueTime ?? DateTime.UtcNow;
+            var _issTime = issueTime ?? DateTime.Now;
 
             var jwtClaims = new Dictionary<string, object>
             {
@@ -29,6 +29,7 @@ namespace TOTVS.Application
                 Claims = jwtClaims,
                 Expires = expirationTime,
                 IssuedAt = _issTime,
+                NotBefore = _issTime,
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 

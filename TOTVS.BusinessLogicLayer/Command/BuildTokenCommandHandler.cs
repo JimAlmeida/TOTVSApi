@@ -28,7 +28,7 @@ namespace TOTVS.Application.Command
 
             response.AccessToken = JWTFactory.BuildToken(_issuer, _subject, _audience, _expirationTime, _jwtKey);
             response.TokenType = "Bearer";
-            response.ExpiresIn = (int)(_expirationTime - DateTime.UtcNow).TotalSeconds;
+            response.ExpiresIn = (int)(_expirationTime - DateTime.Now).TotalSeconds;
             response.IsSuccessful = true;
 
             return Task.FromResult(response);
